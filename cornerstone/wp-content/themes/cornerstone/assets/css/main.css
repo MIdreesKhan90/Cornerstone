@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header section */
+.header-section {
+    padding: 20px 0;
+}
+
+.header-section .navbar {
+    padding: 0;
+}
+
+.header-section .navbar .navbar-brand {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header-section .navbar-nav {
+    margin-left: 70px;
+}
+
+.header-section .navbar-nav li {
+    padding: 0 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-section .navbar-nav li a {
+    color: #54585A;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.header-section .navbar-nav li a.active {
+    color: #000;
+    font-weight: 500;
+}
+
+.header-section .navbar-nav li a:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.header-section .navbar-nav li .sub-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: #fff;
+    display: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+}
+
+.hero-section .page-title {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Specialty Section */
+.specialty-section {
+    padding: 60px 0;
+}
+
+.specialty-section .section-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.specialty-section p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.specialty-list {
+    margin-top: 40px;
+}
+.specialty-list .row{
+    row-gap: 30px;
+}
+
+.specialty-section .specialty-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    padding: 30px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.specialty-section .specialty-card img {
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.specialty-section .specialty-card p {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 0;
+}
+
+/* Accreditation Section */
+.accreditation-section {
+    padding: 60px 0;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+.accreditation-section .section-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.accreditation-section .description {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.accreditation-section .description p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+/* Virtual Section */
+.virtual-section {
+    background-color: #4784C4;
+    padding: 60px 0;
+}
+
+.virtual-section .section-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.virtual-section .section-video {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.virtual-section .section-video .video-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.virtual-section .section-video .video-image .play-btn {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 20px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.virtual-section .section-video .video-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Difference Section */
+.difference-section {
+    padding: 60px 0;
+}
+
+.difference-section .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+
+.difference-section .owl-carousel .item {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.difference-section .owl-carousel .owl-next,
+.owl-prev {
+    border: 1px solid #4784C4 !important;
+    border-radius: 50% !important;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+.difference-section .owl-carousel .owl-next:hover,
+.owl-prev:hover {
+    background-color: #4784C4 !important;
+}
+
+.difference-section .owl-carousel .owl-next {
+    top: 40%;
+    right: 50px;
+}
+
+.difference-section .owl-carousel .owl-prev {
+    top: 40%;
+    left: 50px;
+}
+
+.difference-section .owl-carousel .owl-next::after,
+.owl-prev::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid #4784C4;
+    border-left: 3px solid #4784C4;
+}
+
+.difference-section .owl-carousel .owl-next::after {
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.difference-section .owl-carousel .owl-next span,
+.owl-prev span {
+    display: none;
+}
+
+.difference-section .owl-carousel .owl-next:hover::after,
+.owl-prev:hover::after {
+    border-top: 3px solid #fff !important;
+    border-left: 3px solid #fff !important;
+}
+
+.difference-section .owl-carousel .owl-dots .owl-dot {
+    background-image: url(http://localhost/cornerstone/wp-content/uploads/2023/12/carousel-button-image.png);
+    width: 100px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.difference-section .owl-carousel .owl-dots .owl-dot span {
+    display: none;
+}
+
+.difference-section .section-video .video-image-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.difference-section .section-video .video-image-1 .play-carousel {
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 20px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.difference-section .section-video .video-image-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Programs Section */
+.programs-section {
+    padding: 60px 0;
+    background-color: #F2F2F2;
+}
+
+.programs-section .section-title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.programs-section p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.programs-list {
+    margin-top: 25px;
+}
+
+.programs-list .programs-card {
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.programs-list .programs-card p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.programs-list .programs-card:hover {
+    background-color: #4784C4;
+    color: #fff;
+}
+
+.programs-list .row {
+    justify-content: center;
+    row-gap: 30px;
+}
+
+.programs-list .programs-card img {
+    margin-bottom: 20px;
+    width: 80px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-section .section-title {
+    font-size: 40px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.faq-section .accordion {
+    margin-bottom: 30px;
+}
+
+.faq-section .accordion .accordion-item {
+    border: none;
+}
+
+.faq-section .accordion .accordion-button {
+    border-radius: 0;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: none;
+    background-color: #F2F2F2;
+    color: #000;
+}
+
+.faq-section .accordion .accordion-item+.accordion-item {
+    margin-top: 10px;
+}
+
+.faq-section .accordion .accordion-collapse {
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #4784C4;
+}
+
+.faq-section .accordion .accordion-body {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.faq-section .accordion .accordion-button::after {
+    background-image: url(../images/svg/plus.svg);
+}
+
+.faq-section .accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/svg/minus.svg);
+}
+
+.faq-section h5 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.faq-section .description {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.faq-section .description p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.faq-section .button-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faq-section .button-list .primary-btn {
+    background-color: #4784C4;
+    color: #fff;
+    border-radius: 0;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 30px;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 60px 0;
+    background-color: #F2F2F2;
+}
+
+.footer-section .custom-logo-link {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.footer-section .description {
+    max-width: 400px;
+}
+
+.footer-section .description p {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.footer-section .page-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .page-list li+li {
+    margin-top: 20px;
+}
+
+.footer-section .page-list li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.footer-section .services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .services-list li+li {
+    margin-top: 20px;
+}
+
+.footer-section .services-list li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.footer-section .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.footer-section .social-media a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4784C4;
+    border-radius: 50%;
+}
+
+.footer-section .addresss {
+    font-size: 18px;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+.footer-section .phone-number {
+    text-decoration: none;
+    color: #212529;
+    font-size: 18px;
+}
+
+/* Footer Bottom */
+.footer-bottom-section{
+    background-color: #54585A;
+    padding: 15px;
+}
+.footer-bottom-section p{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+}
+.footer-bottom-section ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer-bottom-section ul li{
+    padding: 0 15px;    
+}
+.footer-bottom-section ul li + li{
+    border-left: 1px solid #fff;
+}
+.footer-bottom-section ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
